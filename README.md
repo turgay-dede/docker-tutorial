@@ -1,8 +1,7 @@
 # Docker Tutorial
 
-### Image arama
+ ### Image arama
 `docker search IMAGE`
-
 ### Image Indirme
 `docker pull IMAGE`
 
@@ -77,6 +76,9 @@ CMD ["run","main.go"] </br>
 
 ### Run
 `docker run goproject:1`
+
+### Docker Loglama
+`docker logs -f NAMES`
 
 
 
