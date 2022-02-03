@@ -1,6 +1,6 @@
 # Docker Tutorial
 
- ### Image arama
+### Image arama
 `docker search IMAGE`
 ### Image Indirme
 `docker pull IMAGE`
@@ -48,9 +48,11 @@
 `docker commit -a "Turgay Dede" NAMES turgaydede/benim_ubuntum_yeni:latest`
 
 ### Docker Hub Login
-`docker login
-username:
-password:`
+```
+docker login
+	username:
+	password:
+```
 ### Docker push
 `docker push turgaydede/benim_ubuntum_yeni:latest`
 
@@ -67,12 +69,14 @@ password:`
 `docker inspect NAMES`
 
 ### Dockerfile
+```
 FROM golang </br>
 COPY ./go_project /home/test </br>
 RUN ["apt-get","update"] </br>
 WORKDIR /home/test/ </br>
 ENTRYPOINT ["go"] </br>
 CMD ["run","main.go"] </br>
+```
 
 ### Build
 `docker build -t goproject:1 .`
