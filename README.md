@@ -70,12 +70,12 @@ docker login
 
 ### Dockerfile
 ```
-FROM golang </br>
-COPY ./go_project /home/test </br>
-RUN ["apt-get","update"] </br>
-WORKDIR /home/test/ </br>
-ENTRYPOINT ["go"] </br>
-CMD ["run","main.go"] </br>
+FROM golang
+COPY ./go_project /home/test
+RUN ["apt-get","update"]
+WORKDIR /home/test/
+ENTRYPOINT ["go"]
+CMD ["run","main.go"]
 ```
 
 ### Build
