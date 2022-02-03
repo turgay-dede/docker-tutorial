@@ -32,6 +32,9 @@
 ### 2 Image ile Container olusturma
 `docker run -d --link benim_sql:mysql -p 8080:80 wordpress`
 
+### Container i durdurma
+`docker stop CONTAINERID`
+
 ### Durdurulan Container i calistirma
 `docker start -a -i benim_ubuntum`
 
